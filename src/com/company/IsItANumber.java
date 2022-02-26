@@ -58,6 +58,10 @@ public class IsItANumber {
         if (counter > 1 || eCounter > 1) {
             isNumber = false;
         }
+        //Checks if the line contains a space
+        if (line.contains(" ")){
+            isNumber = false;
+        }
         return isNumber;
     }
 }
